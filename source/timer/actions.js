@@ -45,7 +45,6 @@ export function subtractFiveMinutes() {
 
 export function toggleTreeSong(event) {
   if (elements.buttonTreeSong.classList.contains('active')) {
-    elements.treeSong.pause()
     state.isMute = true
     removeActive()
     return
@@ -61,7 +60,6 @@ export function toggleTreeSong(event) {
 
 export function toggleCloudSong(event) {
   if (elements.buttonCloudSong.classList.contains('active')) {
-    elements.cloudSong.pause()
     state.isMute = true
     removeActive()
     return
@@ -75,7 +73,6 @@ export function toggleCloudSong(event) {
 
 export function toggleMarketSong(event) {
   if (elements.buttonMarketSong.classList.contains('active')) {
-    elements.marketSong.pause()
     state.isMute = true
     removeActive()
     return
@@ -89,7 +86,6 @@ export function toggleMarketSong(event) {
 
 export function toggleFireSong(event) {
   if (elements.buttonFireSong.classList.contains('active')) {
-    elements.fireSong.pause()
     state.isMute = true
     removeActive()
     return
@@ -106,4 +102,8 @@ function removeActive() {
   document.getElementById('button-cloud-song').classList.remove('active')
   document.getElementById('button-market-song').classList.remove('active')
   document.getElementById('button-fire-song').classList.remove('active')
+  elements.treeSong.pause()
+  elements.cloudSong.pause()
+  elements.marketSong.pause()
+  elements.fireSong.pause()
 }
