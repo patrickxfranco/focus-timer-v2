@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script type="module" src="./source/main.js" defer></script>
+  <title>Focus Timer V2</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="left">
+        <div class="timer">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </div>
+        <div class="controls">
+          <button data-action="countDown" id="button-play-timer">Iniciar timer</button>
+          <button data-action="stopTimer" id="button-stop-timer">Parar timer</button>
+          <button data-action="addFiveMinutes" id="button-add-timer">Adicionar 5 minutos ao timer</button>
+          <button data-action="subtractFiveMinutes" id="button-subtract-timer">Retirar 5 minutos do timer</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="cards">
+          <button data-action="toggleTreeSong" id="button-tree-song">Tocar som da árvore</button>
+          <button data-action="toggleCloudSong" id="button-cloud-song">Tocar som das núvens</button>
+          <button data-action="toggleMarketSong" id="button-market-song">Tocar som do mercado</button>
+          <button data-action="toggleFireSong" id="button-fire-song">Tocar som da fogueira</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
